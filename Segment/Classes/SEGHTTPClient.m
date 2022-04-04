@@ -52,7 +52,6 @@ NSString * const kSegmentAPIBaseHost = @"https://api.segment.io/v1";
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
         config.HTTPAdditionalHeaders = @{
             @"Accept-Encoding" : @"gzip",
-            @"Content-Encoding" : @"gzip",
             @"Content-Type" : @"application/json",
             @"User-Agent" : [NSString stringWithFormat:@"analytics-ios/%@", [SEGAnalytics version]],
         };
